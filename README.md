@@ -27,7 +27,7 @@
 ## ToDo
 [ x ] - Criar pasta local e criar projeto React com vite
 
-[ ] - Instalar bibliotecas do projeto e estruturar pastas
+[ x ] - Instalar bibliotecas do projeto e estruturar pastas
 
 [ ] - Importar arquivos necessarios para o projeto
 
