@@ -29,7 +29,7 @@
 
 [ x ] - Instalar bibliotecas do projeto e estruturar pastas
 
-[ ] - Importar arquivos necessarios para o projeto
+[ x ] - Importar arquivos necessarios para o projeto
 
 [ ] - Criar rotas com react router dom
 
