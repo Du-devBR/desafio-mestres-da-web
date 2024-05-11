@@ -33,7 +33,7 @@
 
 [ x ] - Criar rotas com react router dom
 
-[ ] - Criar mock para os dados a serem servidos
+[ x ] - Criar mock para os dados a serem servidos
 
 [ ] - Construir telas
 
