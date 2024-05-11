@@ -31,7 +31,7 @@
 
 [ x ] - Importar arquivos necessarios para o projeto
 
-[ ] - Criar rotas com react router dom
+[ x ] - Criar rotas com react router dom
 
 [ ] - Criar mock para os dados a serem servidos
 

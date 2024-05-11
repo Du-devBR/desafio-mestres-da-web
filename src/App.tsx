@@ -1,7 +1,10 @@
+import { BrowserRouter } from "react-router-dom";
+import { Router } from "./router";
+
 export default function App() {
   return (
-    <>
-      <h1>Desafio mestres da web</h1>
-    </>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 }
