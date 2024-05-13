@@ -35,9 +35,11 @@
 
 [ x ] - Criar mock para os dados a serem servidos
 
-[ ] - Construir telas
+[ x ] - Construir telas
 
-[ ] - Contruir cards
+[ x ] - Contruir cards
+
+[ x ] - Contruir carousel
 
 [ ] - Construir modal
 
