@@ -1,19 +1,47 @@
 # Desafio Front-end Mestres da web 👩‍💻
 ## Eduardo Ananias da Silva
+![GitHub repo size](https://img.shields.io/github/repo-size/Du-devBR/desafio-mestres-da-web)
+![GitHub language count](https://img.shields.io/github/languages/count/Du-devBR/desafio-mestres-da-web)
+![GitHub forks](https://img.shields.io/github/forks/Du-devBR/desafio-mestres-da-web)
 
-### Arquivos
-- [Design](https://drive.google.com/file/d/1-sGLbiaqb_EIskfje4uJzsxSSxLW-wbe/view?usp=sharing)
-- [Fontes](https://drive.google.com/file/d/1J0ZGvaQczX68yFLDnp9Ma0O2xmneh8Bb/view?usp=sharing)
-- [Fontes 2](https://drive.google.com/file/d/1SCIvJoXnRljB_5lfAH_snHnF8ohQNuOr/view?usp=sharing)
+> Pagina construida com React-js para renderizar cards com informações de personagens, filmes e quadrinhos. O objetivo foi deixar fiel ao designer e aplicar técnicas do ReactJs, passando por consumo de api, rotas, redux-toolkit, react-useForm.
 
+## 💻 Como usar o projeto
+
+<h3>Clone o repositorio</h3>
+
+```bash
+git clone https://github.com/Du-devBR/desafio-mestres-da-web.git
+```
+
+```bash
+cd desafio-api-restFull-nodejs
+```
+
+```bash
+npm install
+```
+> Projeto possui uma api simulado pelo json-server, necessario inciar com os comando abaixo.
+
+<h3>Inicie os servidores</h3>
+
+### Api
+```bash
+npm run json-server
+```
+
+### Frontend
+```bash
+npm run dev
+```
 ### Requisitos Técnicos 😁
-- ReactJS  ou nest.JS✔
-- TypeScript ✔
-- Estilização com Styled Components ✔
-- Responsividade ✔
-- Organização do projeto ✔
-- Código limpo ✔
-- Documentação do projeto ✔
+- [ x ] ReactJS✔  ou nest.JS
+- [ x ] TypeScript ✔
+- [ x ] Estilização com Styled Components ✔
+- [  ]Responsividade ✔
+- [ x ] Organização do projeto ✔
+- [ x ] Código limpo ✔
+- [ x ]Documentação do projeto ✔
 
 ### Requisitos comportamentais
 - Aprendizado continuo;
@@ -22,7 +50,11 @@
 - Visão sistêmica.
 
 ### Diferenciais 💖
-- Local storage.
+- [ x ] Local storage.
+
+## 🚀 Melhorias implementadas
+
+- [x] - Pagina de registro de usuario.
 
 ## ToDo
 [ x ] - Criar pasta local e criar projeto React com vite
@@ -51,4 +83,18 @@
 
 [ x ] - Documentar codigo
 
+[  ] - Responsivo
+
 [ ] - Criar animações
+
+### 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [ViteJs](https://vitejs.dev/)
+- [React](https://pt-br.reactjs.org/)
+- [Styled-components](https://styled-components.com/docs)
+- [Redux](https://redux.js.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React-hook-form](https://react-hook-form.com/)
+- [json-server](https://github.com/typicode/json-server#readme)
