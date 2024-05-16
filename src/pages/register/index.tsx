@@ -11,6 +11,7 @@ import { fetchRegisterUser } from "../../redux/reducer/register-reducer/action";
 import { RegisterTypes } from "./types";
 import { useForm } from "react-hook-form";
 import { AppDispatch } from "../../redux/store";
+import Swal from "sweetalert2";
 
 export function Register() {
   /**
@@ -41,7 +42,16 @@ export function Register() {
   const handleSubmitNewUser = (data: RegisterTypes) => {
     dispatch(fetchRegisterUser(data)).then((result) => {
       if (result.payload) {
-        navigate("/login");
+        Swal.fire({
+          icon: "success",
+          title: "Registro feito com sucesso!",
+          timer: 2000,
+          showConfirmButton: false,
+        }).then((result) => {
+          if (result.dismiss === Swal.DismissReason.timer) {
+            navigate("/login");
+          }
+        });
       }
     });
   };

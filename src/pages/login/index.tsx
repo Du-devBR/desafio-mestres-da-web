@@ -14,6 +14,7 @@ import { fetchLoginUser } from "../../redux/reducer/login-reducer/action";
 import { AppDispatch, RootState } from "../../redux/store";
 import { LoginTypes } from "./types";
 import { Logo } from "../../componentes/logo";
+import Swal from "sweetalert2";
 
 export function Login() {
   /**
@@ -45,8 +46,26 @@ export function Login() {
   const handleSubmitLogin = async (data: LoginTypes) => {
     try {
       await dispatch(fetchLoginUser(data)).then((result) => {
-        if (result?.payload) {
-          navigate("/");
+        console.log(result);
+
+        if (result?.type === "POST_LOGIN") {
+          Swal.fire({
+            icon: "success",
+            title: "Registro feito com sucesso!",
+            timer: 2000,
+            showConfirmButton: false,
+          }).then((result) => {
+            if (result.dismiss === Swal.DismissReason.timer) {
+              navigate("/");
+            }
+          });
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "Usuario não encontrado!",
+            timer: 2000,
+            showConfirmButton: false,
+          });
         }
       });
     } catch (error) {
