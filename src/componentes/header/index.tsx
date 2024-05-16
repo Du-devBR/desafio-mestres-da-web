@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
   ContainerHeader,
   List,
@@ -15,13 +15,21 @@ export function Header() {
    * Utilizado use location para mapear qual o pathname da pagina
    */
   const location = useLocation();
+  const navigate = useNavigate();
   const path = location.pathname.split("/")[1];
+
+  /**
+   * Remove o user do localStorage, fazendo logout da pagina
+   */
+  const handleLogoutAccount = () => {
+    localStorage.removeItem("user");
+    navigate("/login");
+  };
 
   /**
    * Indicador de pagina, alterando estado false para true no ListItem referente a localização da pagina
    * @param {boolean} isActive - Adiciona true caso o pathname seja igual a condição estabelecida.
    */
-
   return (
     <ContainerHeader>
       <Logo>
@@ -41,7 +49,7 @@ export function Header() {
         </List>
         <Profile>
           <ProfilePicture src={profilePicture} />
-          <button>Sair</button>
+          <button onClick={handleLogoutAccount}>Sair</button>
         </Profile>
       </Navbar>
     </ContainerHeader>
