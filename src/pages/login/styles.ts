@@ -3,13 +3,14 @@ import { Themes } from "../../styles/themes";
 
 export const ContainerForms = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
   margin-left: 145px;
+  gap: 3rem;
 
   @media(max-width:768px){
     margin-left: 0;
-    justify-content: center;
     padding: 2rem;
   }
 
@@ -17,7 +18,7 @@ export const ContainerForms = styled.div`
 
 export const ContentForms = styled.form`
   display: flex;
-  width: 500px;
+  max-width: 500px;
   flex-direction: column;
   gap: 1rem;
 
@@ -95,7 +96,7 @@ export const ButtonSign = styled.button`
   cursor: pointer;
   font-family: ${Themes.axiforma.medium};
   font-size: ${Themes.fontSize.text_28};
-  color: ${Themes.colors.gray};
+  color: ${Themes.colors.white};
   background-color: ${Themes.colors.red};
 
   @media(max-width:480px){

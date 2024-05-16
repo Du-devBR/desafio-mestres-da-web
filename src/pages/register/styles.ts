@@ -67,7 +67,7 @@ export const ButtonSignup = styled.button`
   cursor: pointer;
   font-family: ${Themes.axiforma.medium};
   font-size: ${Themes.fontSize.text_28};
-  color: ${Themes.colors.gray};
+  color: ${Themes.colors.white};
   background-color: ${Themes.colors.red};
 
   @media(max-width:480px){

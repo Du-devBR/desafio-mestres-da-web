@@ -13,6 +13,7 @@ import { useForm } from "react-hook-form";
 import { fetchLoginUser } from "../../redux/reducer/login-reducer/action";
 import { AppDispatch, RootState } from "../../redux/store";
 import { LoginTypes } from "./types";
+import { Logo } from "../../componentes/logo";
 
 export function Login() {
   /**
@@ -55,6 +56,7 @@ export function Login() {
 
   return (
     <ContainerForms>
+      <Logo />
       <ContentForms onSubmit={handleSubmit(handleSubmitLogin)}>
         <h1>Bem-vindo(a) de volta!</h1>
         <p>Acesse sua conta</p>
