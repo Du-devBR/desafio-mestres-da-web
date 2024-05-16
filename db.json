@@ -2,7 +2,7 @@
   "characters": [
     {
       "id": 1,
-      "name": "Homen Aranha",
+      "title": "Homen Aranha",
       "description": "Após ser mordido por uma aranha radioativa, Peter Parker se torna o amigo da vizinhança, o Homem-Aranha.",
       "thumbnail": "./src/assets/images/portrait_spiderman.jpg",
       "movies": [
@@ -17,7 +17,7 @@
     },
     {
       "id": 2,
-      "name": "Wanda Maximoff",
+      "title": "Wanda Maximoff",
       "description": "Wanda Maximoff foi sequestrada da Sérvia e trazida para a Montanha Wundagore, base do Alto Evolucionário. Durante anos, ela e seu irmão gêmeo, Pietro, acreditavam que eram filhos de um casal de ciganos.",
       "thumbnail": "./src/assets/images/portrait_whanda.jpg",
       "movies": [
@@ -31,7 +31,7 @@
     },
     {
       "id": 3,
-      "name": "Thanos",
+      "title": "Thanos",
       "description": "A lua Titã era governada por Mentor (A'Lars), quando então reinava paz e tecnologia. Mentor tinha dois filhos: Eros e Thanos.  Ao contrário do irmão, Thanos, era bem mais poderoso e almejava ainda mais.",
       "thumbnail": "./src/assets/images/portrait_thanos.jpg",
       "movies": [
@@ -44,7 +44,7 @@
     },
     {
       "id": 4,
-      "name": "Hulk",
+      "title": "Hulk",
       "description": "Na história original dos quadrinhos, o Hulk é um selvagem e poderoso alter ego do Dr. Robert Bruce Banner, um cientista que foi atingido por raios gama enquanto salvava um adolescente durante o teste militar.",
       "thumbnail": "./src/assets/images/portrait_hulk.jpg",
       "movies": [
@@ -59,41 +59,13 @@
   ],
   "movies": [
     {
-      "id": 1,
-      "title": "Homem de Ferro",
-      "description": "Tony Stark (Robert Downey Jr.) é um industrial bilionário, que também é um brilhante inventor, ao ser sequestrado, ele é obrigado a construir uma arma devastadora, mas ao invés disso, cria uma armadura capaz de mudar a história.",
-      "thumbnail": "./src/assets/images/portrait_ironman-movie.jpg",
-      "streaming_at": [
-        {
-          "id": 1,
-          "thumbnail": "./src/assets/images/logo_disney.jpg"
-        }
-      ],
-      "stars": 3,
-      "release_date": "2008-04-30"
-    },
-    {
-      "id": 2,
-      "title": "Homem de Ferro 2",
-      "description": "O mundo já sabe que o inventor bilionário Tony Stark (Robert Downey Jr.) é o super-herói blindado Homem de Ferro. Sofrendo pressão do governo, da mídia e do público para compartilhar sua tecnologia com as forças armadas",
-      "thumbnail": "./src/assets/images/portrait_ironman2-movie.jpg",
-      "streaming_at": [
-        {
-          "id": 1,
-          "thumbnail": "./src/assets/images/logo_disney.jpg"
-        }
-      ],
-      "stars": 4,
-      "release_date": "2010-04-30"
-    },
-    {
-      "id": 3,
+      "id": 5,
       "title": "Thor",
       "description": "Quando é banido do reino de Asgard e exilado na Terra, o arrogante guerreiro Thor (Chris Hemsworth) é obrigado a lutar para reaver seus poderes perdidos. ",
       "thumbnail": "./src/assets/images/portrait_thor-movie.jpg",
       "streaming_at": [
         {
-          "id": 1,
+          "id": 6,
           "thumbnail": "./src/assets/images/logo_disney.jpg"
         }
       ],
@@ -101,13 +73,41 @@
       "release_date": "2011-04-29"
     },
     {
-      "id": 4,
+      "id": 7,
+      "title": "Homem de Ferro",
+      "description": "Tony Stark (Robert Downey Jr.) é um industrial bilionário, que também é um brilhante inventor, ao ser sequestrado, ele é obrigado a construir uma arma devastadora, mas ao invés disso, cria uma armadura capaz de mudar a história.",
+      "thumbnail": "./src/assets/images/portrait_ironman-movie.jpg",
+      "streaming_at": [
+        {
+          "id": 8,
+          "thumbnail": "./src/assets/images/logo_disney.jpg"
+        }
+      ],
+      "stars": 3,
+      "release_date": "2008-04-30"
+    },
+    {
+      "id": 9,
+      "title": "Homem de Ferro 2",
+      "description": "O mundo já sabe que o inventor bilionário Tony Stark (Robert Downey Jr.) é o super-herói blindado Homem de Ferro. Sofrendo pressão do governo, da mídia e do público para compartilhar sua tecnologia com as forças armadas",
+      "thumbnail": "./src/assets/images/portrait_ironman2-movie.jpg",
+      "streaming_at": [
+        {
+          "id": 10,
+          "thumbnail": "./src/assets/images/logo_disney.jpg"
+        }
+      ],
+      "stars": 4,
+      "release_date": "2010-04-30"
+    },
+    {
+      "id": 11,
       "title": "Capitão América",
       "description": "Em Capitão América: O Primeiro Vingador, conhecemos a história de Steve Rogers (Chris Evans) e como ele se tornou o melhor soldado do mundo. ",
       "thumbnail": "./src/assets/images/portrait_capamerica-movie.jpg",
       "streaming_at": [
         {
-          "id": 1,
+          "id": 12,
           "thumbnail": "./src/assets/images/logo_disney.jpg"
         }
       ],
@@ -115,13 +115,13 @@
       "release_date": "2011-07-29"
     },
     {
-      "id": 5,
+      "id": 13,
       "title": "Capitã Marvel",
       "description": "Capitã Marvel, parte do exército de elite dos Kree, uma raça alienígena, encontra-se no meio de uma batalha entre seu povo e os Skrulls. ",
       "thumbnail": "./src/assets/images/portrait_capmarvel-movie.jpg",
       "streaming_at": [
         {
-          "id": 1,
+          "id": 14,
           "thumbnail": "./src/assets/images/logo_disney.jpg"
         }
       ],
@@ -131,47 +131,47 @@
   ],
   "comics": [
     {
-      "id": 1,
+      "id": 15,
       "title": "Thor: Vikings",
       "description": "Garth Ennis e sua violência atacam novamente na HQ que leva a violência das histórias de Thor ao limite! Na minissérie de 2003 vemos vikings de um passado distante voltando a vida.",
       "thumbnail": "./src/assets/images/portrait_thor-hq.jpg",
       "selling_at": [
         {
-          "id": 1,
-          "thumbnail": "./src/assets/images/logo_americanas.jpg"
+          "id": 16,
+          "thumbnail": "./src/assets/images/logo_amaricanas.jpg"
         },
         {
-          "id": 2,
+          "id": 22,
           "thumbnail": "./src/assets/images/logo_amazon.jpg"
         }
       ],
       "stars": 5
     },
     {
-      "id": 2,
+      "id": 17,
       "title": "Surfista Prateado: Parábola",
       "description": "O único oponente do Devorador de Mundos é o herói que ele aprisionou na Terra: o Surfista Prateado, Galactus jurou não consumir o planeta, mas e se, em vez disso, ele transformar a civilização em seus adoradores?",
       "thumbnail": "./src/assets/images/portrait_surfista-hq.jpg",
       "selling_at": [
         {
-          "id": 1,
-          "thumbnail": "./src/assets/images/logo_americanas.jpg"
+          "id": 18,
+          "thumbnail": "./src/assets/images/logo_amaricanas.jpg"
         }
       ],
       "stars": 5
     },
     {
-      "id": 3,
+      "id": 19,
       "title": "Wolverine: Origens",
       "description": "Origem é uma minissérie em quadrinhos publicada pela Marvel Comics em seis edições, entre 2001 e 2002. A história conta a revelação do passado do personagem Wolverine. ",
       "thumbnail": "./src/assets/images/portrait_wolverine-hq.jpg",
       "selling_at": [
         {
-          "id": 1,
-          "thumbnail": "./src/assets/images/logo_americanas.jpg"
+          "id": 20,
+          "thumbnail": "./src/assets/images/logo_amaricanas.jpg"
         },
         {
-          "id": 2,
+          "id": 21,
           "thumbnail": "./src/assets/images/logo_amazon.jpg"
         }
       ],
