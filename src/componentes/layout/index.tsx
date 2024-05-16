@@ -6,6 +6,10 @@ import { useEffect } from "react";
 
 export function Layout() {
   const navigate = useNavigate();
+
+  /**
+   * Verificação se o usuario esta registrado no local storage, caso não esteja será redirecionado para login.
+   */
   useEffect(() => {
     const token = localStorage.getItem("user");
     if (!token) {

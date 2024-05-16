@@ -1,5 +1,27 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Themes } from "../../styles/themes";
+
+const Appear = keyframes`
+  0% {
+    opacity: 0;
+    display: none;
+  }
+
+  50%{
+    opacity: 0;
+    display: none;
+  }
+
+  90%{
+    opacity: 0.8;
+    display: flex;
+  }
+
+  100%{
+    opacity: 1;
+    display: flex;
+  }
+`
 
 export const ContainerForms = styled.div`
   display: flex;
@@ -21,6 +43,7 @@ export const ContentForms = styled.form`
   max-width: 500px;
   flex-direction: column;
   gap: 1rem;
+  animation: ${Appear} 3s linear forwards;
 
   h1{
     font-family: ${Themes.axiforma.bold};

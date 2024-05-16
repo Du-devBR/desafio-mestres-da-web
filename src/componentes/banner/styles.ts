@@ -1,5 +1,22 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
+const Appear = keyframes`
+  0% {
+    opacity: 0;
+  }
+
+  50%{
+    opacity: 0;
+  }
+
+  90%{
+    opacity: 0.8;
+  }
+
+  100%{
+    opacity: 1;
+  }
+`
 
 export const BannerImg = styled.div`
   position: absolute;
@@ -17,6 +34,7 @@ export const BannerImg = styled.div`
     top: 0;
     z-index: 1;
     mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), 20%, rgba(0, 0, 0, 0));
+    animation: ${Appear} 2s linear forwards;
   }
 
 `

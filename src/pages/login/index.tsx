@@ -51,7 +51,7 @@ export function Login() {
         if (result?.type === "POST_LOGIN") {
           Swal.fire({
             icon: "success",
-            title: "Registro feito com sucesso!",
+            title: "Login feito com sucesso!",
             timer: 2000,
             showConfirmButton: false,
           }).then((result) => {
