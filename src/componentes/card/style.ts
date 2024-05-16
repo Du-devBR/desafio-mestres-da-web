@@ -7,12 +7,21 @@ interface ImageProps {
 
 export const ContainerCard = styled.div<ImageProps>`
   position: relative;
-  width: 289px;
+  min-width: 289px;
   height: 439px;
   border-radius: 1.875rem;
   overflow: hidden;
   scroll-snap-align: start;
   background-image: url(${(image) => image.imgUrl});
+
+  @media(max-height: 700px){
+    align-self: flex-end;
+    bottom: 1.5rem;
+  }
+
+  @media(max-width: 480px){
+    height: 420px;
+  }
 
 `
 export const CardInformation = styled.div`
@@ -25,8 +34,8 @@ export const CardInformation = styled.div`
   height: 234px;
   bottom: 0;
   padding: 28px 23px 16px 23px;
-  background: linear-gradient(to bottom, rgb(255, 0, 0),  70%, rgb(128, 0, 0, 0.2));
   border-radius: 1.875rem;
+  background: linear-gradient(to bottom, rgb(255, 0, 0),  70%, rgb(128, 0, 0, 0.2));
 
   button {
     background: none;
@@ -35,6 +44,10 @@ export const CardInformation = styled.div`
     font-family: ${Themes.axiforma.light};
     font-size: ${Themes.fontSize.text_20};
     color: ${Themes.colors.white};
+  }
+
+  @media(max-width: 480px){
+    height: 200px;
   }
 
 `

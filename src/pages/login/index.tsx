@@ -70,7 +70,7 @@ export function Login() {
           })}
         />
         <input
-          type="text"
+          type="password"
           placeholder="Senha"
           {...register("password", {
             required: "Campo obrigatório",

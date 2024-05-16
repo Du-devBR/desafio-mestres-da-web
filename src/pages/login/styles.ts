@@ -4,9 +4,15 @@ import { Themes } from "../../styles/themes";
 export const ContainerForms = styled.div`
   display: flex;
   align-items: center;
-
-  height: 100vh;
+  min-height: 100vh;
   margin-left: 145px;
+
+  @media(max-width:768px){
+    margin-left: 0;
+    justify-content: center;
+    padding: 2rem;
+  }
+
 `
 
 export const ContentForms = styled.form`
@@ -35,6 +41,23 @@ export const ContentForms = styled.form`
     font-size: ${Themes.fontSize.text_22};
     color: ${Themes.colors.gray};
     outline: none;
+  }
+
+  @media(max-width:480px){
+    max-width: 500px;
+
+    h1{
+      font-size: ${Themes.fontSize.text_22};
+    }
+
+    p{
+      font-size: ${Themes.fontSize.text_18};
+    }
+
+    input{
+      padding: 16px;
+      font-size: ${Themes.fontSize.text_16};
+    }
   }
 `
 
@@ -74,6 +97,10 @@ export const ButtonSign = styled.button`
   font-size: ${Themes.fontSize.text_28};
   color: ${Themes.colors.gray};
   background-color: ${Themes.colors.red};
+
+  @media(max-width:480px){
+    font-size: ${Themes.fontSize.text_16};
+  }
 `
 
 export const FooterForm = styled.span`

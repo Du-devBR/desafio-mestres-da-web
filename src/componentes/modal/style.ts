@@ -9,13 +9,17 @@ export const ContainerModal = styled.div<ModalProps>`
   position: absolute;
   display: flex;
   width: ${(active) => active.activeModal ? "100%" : '0'};
-  min-height: calc(100vh);
+  height: calc(100vh);
   background: linear-gradient(to right, rgb(0, 0, 0),  85%, rgb(33, 33, 33, 0.1));
   z-index: 10;
   align-items: center;
   margin: 0 auto;
   justify-content: center;
   transition: all 0.7s;
+
+  @media(max-width: 480px){
+    max-height: 600px;
+  }
 `
 
 export const ModalContent = styled.div<ModalProps>`
@@ -25,9 +29,9 @@ export const ModalContent = styled.div<ModalProps>`
   gap: 41px;
   width: 659px;
   height: 439px;
-  background-color: red;
   border-radius: 30px;
   overflow: hidden;
+  background-color: ${Themes.colors.red};
 
   button {
     position: absolute;
@@ -39,10 +43,24 @@ export const ModalContent = styled.div<ModalProps>`
     color: ${Themes.colors.white};
     font-size: ${Themes.fontSize.text_30};
   }
+
+  @media(max-width: 480px){
+    height: 600px;
+    gap: 16px;
+    background: none;
+    flex-direction: column;
+  }
+
 `
 
 export const ModalImg = styled.img`
   border-radius: 30px;
+
+  @media(max-width: 768px){
+    object-fit: contain;
+    width: 100%;
+    position: absolute;
+  }
 `
 
 export const ModalInfos = styled.div`
@@ -63,6 +81,19 @@ export const ModalInfos = styled.div`
     font-family: ${Themes.axiforma.thin};
     font-size: ${Themes.fontSize.text_12};
     color: ${Themes.colors.white};
+  }
+
+  @media(max-width: 480px){
+    position: absolute;
+    bottom: 0;
+    padding: 28px 23px 16px 23px;
+    border-radius: 1.875rem;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(255, 0, 0),  70%, rgb(128, 0, 0, 0.2));
+    gap: 0.5rem;
+    h1{
+      font-size: ${Themes.fontSize.text_20};
+    }
   }
 `
 
@@ -87,6 +118,12 @@ export const ModalList = styled.ul`
     border-radius: 9px;
     box-shadow: 0px 3px 6px  rgb(0, 0, 0, 0.16);
   }
+  @media(max-width: 480px){
+
+    h2, li{
+      font-size: ${Themes.fontSize.text_15};
+    }
+  }
 `
 
 
@@ -104,5 +141,11 @@ export const ModalStars = styled.div`
 
   span{
     font-size: 25px;
+  }
+
+  @media(max-width: 480px){
+    h2{
+      font-size: ${Themes.fontSize.text_15};
+    }
   }
 `

@@ -62,7 +62,7 @@ export function Register() {
           })}
         />
         <input
-          type="text"
+          type="password"
           placeholder="Senha"
           {...register("password", {
             required: "Campo obrigatório",
