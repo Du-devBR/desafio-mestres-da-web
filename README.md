@@ -41,12 +41,14 @@
 
 [ x ] - Contruir carousel
 
-[ ] - Construir modal
+[ x ] - Construir modal
 
 [ x ] - Construir header
 
-[ ] - Construir tela login/cadastro. Persistir dados
+[ x ] - Construir tela login/cadastro. Persistir dados
+
+[ x ] - Criar redux
+
+[ x ] - Documentar codigo
 
 [ ] - Criar animações
-
-[ ] - Criar testes

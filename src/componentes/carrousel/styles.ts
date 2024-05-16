@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-
-
 export const ContainerCarrousel = styled.section`
   display: grid;
   grid-auto-flow: column;

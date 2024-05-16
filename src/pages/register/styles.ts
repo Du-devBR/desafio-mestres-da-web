@@ -38,34 +38,7 @@ export const ContentForms = styled.form`
   }
 `
 
-export const ContainerOption = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  span {
-    text-decoration: underline red;
-    cursor: pointer;
-    font-family: ${Themes.axiforma.medium};
-    font-size: ${Themes.fontSize.text_15};
-    color: ${Themes.colors.gray};
-  }
-
-`
-
-export const Checkbox = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-
-  label {
-    font-family: ${Themes.axiforma.medium};
-    font-size: ${Themes.fontSize.text_15};
-    color: ${Themes.colors.gray};
-  }
-`
-
-export const ButtonSign = styled.button`
+export const ButtonSignup = styled.button`
   padding: 1rem 2rem;
   border-radius: 100px;
   border: none;
@@ -88,7 +61,7 @@ export const FooterForm = styled.span`
   }
 `
 
-export const ErrorLoginMessage = styled.span`
+export const ErrorMessage = styled.span`
   font-family: ${Themes.axiforma.medium};
   font-size: ${Themes.fontSize.text_12};
   color: ${Themes.colors.red};
