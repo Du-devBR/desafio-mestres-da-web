@@ -15,7 +15,7 @@ git clone https://github.com/Du-devBR/desafio-mestres-da-web.git
 ```
 
 ```bash
-cd desafio-api-restFull-nodejs
+cd desafio-mestres-da-web/
 ```
 
 ```bash
